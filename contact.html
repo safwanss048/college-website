@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="./images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+    <!------CONTACT US------->
+    <section class="Location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1543.7
+        250934148822!2d77.72273098490065!3d8.72911247629915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!
+        4f13.1!3m3!1m2!1s0x3b040dfe39c9c171%3A0xe977e5245f878a55!2sCSI%20Bell%20Pins%20Indrani
+        %20Chelladurai%20Mission%20Hospital!5e0!3m2!1sen!2sin!4v1621240140457!5m2!1sen!2sin"
+         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    <section class="contact">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Xyz Road Building,ABC Building </h5>
+                        <p>Tirunelveli,TamilNadu</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5> +01247687608</h5>
+                        <p>Monday to Saturday,10AM to 6AM</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <span>
+                        <h5>info@easytutorials.com </h5>
+                        <p>Email us for your query</p>
+                    </span>
+                </div>
+
+            </div>
+            <div class="contact-col">
+                <form class="contact-form" action="form.php" method="POST">
+                    <input type="text"  name="name" placeholder="Enter a Name" required>
+                    <input type="email" name="email" placeholder="Enter Email Address" required>
+                    <input type="text"  name="subject" placeholder="Enter Your Subject" required>
+                    <textarea rows="5" name="message" placeholder="Message"></textarea>
+                    <button type="submit" class="hero-btn1">Send Message</button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!---- FOOTER---->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet ,consectetur adipiscing elit
+            Lorem ipsum dolor sit amet ,consectetur adipiscing elit<br>
+            Lorem ipsum dolor sit amet ,consectetur adipiscing elit
+        </p>
+        <div class="icon">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter "></i>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!------JavaScript for Toggle Menu------>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+</body>
+
+</html>
